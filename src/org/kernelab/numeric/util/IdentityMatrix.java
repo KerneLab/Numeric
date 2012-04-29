@@ -3,9 +3,9 @@ package org.kernelab.numeric.util;
 import org.kernelab.basis.Tools;
 import org.kernelab.numeric.Fraction;
 import org.kernelab.numeric.Operator;
-import org.kernelab.numeric.apps.Parser;
 import org.kernelab.numeric.matrix.DoubleMatrix;
 import org.kernelab.numeric.matrix.FractionMatrix;
+import org.kernelab.numeric.matrix.Parser;
 import org.kernelab.numeric.matrix.Position;
 import org.kernelab.numeric.matrix.Size;
 

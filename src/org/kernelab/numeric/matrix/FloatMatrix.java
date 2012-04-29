@@ -1,7 +1,6 @@
 package org.kernelab.numeric.matrix;
 
 import org.kernelab.basis.Tools;
-import org.kernelab.numeric.apps.Parser;
 
 public class FloatMatrix extends Matrix<Float> implements AlgebraicMatrix<Float>
 {

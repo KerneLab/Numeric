@@ -2,7 +2,6 @@ package org.kernelab.numeric.matrix;
 
 import org.kernelab.basis.Tools;
 import org.kernelab.numeric.Fraction;
-import org.kernelab.numeric.apps.Parser;
 
 public class FractionMatrix extends NumericMatrix<Fraction>
 {

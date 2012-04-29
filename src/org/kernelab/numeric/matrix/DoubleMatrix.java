@@ -1,7 +1,6 @@
 package org.kernelab.numeric.matrix;
 
 import org.kernelab.basis.Tools;
-import org.kernelab.numeric.apps.Parser;
 
 public class DoubleMatrix extends Matrix<Double> implements AlgebraicMatrix<Double>
 {
