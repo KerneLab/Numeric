@@ -18,8 +18,7 @@ public class BasicUsage
 		matrix.setAll(0.0);
 
 		// 使用一个Double型二维数组作为构造的参数
-		Double[][] data = { { 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 }, { 7.0, 8.0, 9.0 },
-				{ 10.0, 11.0, 12.0 } };
+		Double[][] data = { { 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 }, { 7.0, 8.0, 9.0 }, { 10.0, 11.0, 12.0 } };
 		matrix = new Matrix<Double>(data);
 		Tools.debug(matrix.toString());
 		/* 输出
