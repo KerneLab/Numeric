@@ -24,13 +24,6 @@ public class LUDecomposition implements Operator<FractionMatrix>
 		FractionMatrix m = Parser.parseFractionMatrix(s);
 		Tools.debug(m);
 		Tools.debug(new LUDecomposition().operate(m));
-		// s = "[1,0,0,0;-2,1,0,0;1,0,1,0;-1,1/3,5/3,1]";
-		// m = Parser.parseFractionMatrix(s);
-		// Tools.debug(m);
-		// s = "[1,2,3,4;0,3,7,10;0,0,1,-13;0,0,0,70/3]";
-		// FractionMatrix n = Parser.parseFractionMatrix(s);
-		// Tools.debug(n);
-		// Tools.debug(m.product(n));
 	}
 
 	public FractionMatrix operate(FractionMatrix... matrixs)
@@ -41,8 +34,8 @@ public class LUDecomposition implements Operator<FractionMatrix>
 
 		int order = matrix.getRows();
 
-		FractionMatrix up = (FractionMatrix) matrix.clone(new Range(Position.FIRST,
-				order - 1, Position.FIRST, order - 1));
+		FractionMatrix up = (FractionMatrix) matrix.clone(new Range(Position.FIRST, order - 1, Position.FIRST,
+				order - 1));
 
 		FractionMatrix result = new FractionMatrix(new Size(order, order));
 
@@ -137,8 +130,7 @@ public class LUDecomposition implements Operator<FractionMatrix>
 		result = (FractionMatrix) matrix.clone();
 
 		// Copy the L\U combination to the result.
-		result.quote(new Range(Position.FIRST, order - 1, Position.FIRST, order - 1))
-				.clone(temp);
+		result.quote(new Range(Position.FIRST, order - 1, Position.FIRST, order - 1)).clone(temp);
 
 		return result;
 	}
